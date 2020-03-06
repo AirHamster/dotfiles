@@ -1,0 +1,13 @@
+#!/usr/bin/env bash
+
+mkdir vim
+cp ~/.vimrc ./vim/vimrc
+mkdir tmux
+cp -R ~/.tmux ./tmux
+cp ~/.tmux.conf ./tmux/tmux.conf
+mkdir git
+cp ~/.gitconfig ./git/gitconfig
+cp ~/.git ./git
+cp ~/.gitignore ./git/gitignore
+
+
