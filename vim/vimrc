@@ -42,6 +42,26 @@ Plugin 'scrooloose/nerdcommenter'
 Plugin 'majutsushi/tagbar'
 nmap <F8> :TagbarToggle<CR>
 
+" Buffers switching
+map gn :bn<cr>
+map gp :bp<cr>
+map gd :bd<cr>
+
+" Buffer numbers in statusline
+let g:airline#extensions#tabline#buffer_nr_show = 1
+" Status Line {  
+        set laststatus=2                             " always show statusbar  
+        set statusline=  
+        set statusline+=%-10.3n\                     " buffer number  
+        set statusline+=%f\                          " filename   
+        set statusline+=%h%m%r%w                     " status flags  
+        set statusline+=\[%{strlen(&ft)?&ft:'none'}] " file type  
+        set statusline+=%=                           " right align remainder  
+        set statusline+=0x%-8B                       " character value  
+        set statusline+=%-14(%l,%c%V%)               " line, character  
+        set statusline+=%<%P                         " file position  
+"}  
+
 
 "YouCompleteMe
 "Plugin 'Valloric/YouCompleteMe'

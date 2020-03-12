@@ -7,7 +7,6 @@ cp -R ~/.tmux ./tmux
 cp ~/.tmux.conf ./tmux/tmux.conf
 mkdir git
 cp ~/.gitconfig ./git/gitconfig
-cp ~/.git ./git
 cp ~/.gitignore ./git/gitignore
 
 

@@ -1,0 +1,14 @@
+[user]
+	name = Ilia Zarubin
+	email = air_hamster@bk.ru
+[core]
+	editor = vim
+	excludesfile = ~/.gitignore
+[alias]
+    lg = log --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
+    unstage = reset HEAD
+    st = status -sb
+    undo = checkout --
+    subupdate = submodule update --init --recursive
+    cpick = cherry-pick
+    branchdate =  ! ~/.git/helpers/git-branchdate-helper
